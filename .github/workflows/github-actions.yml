@@ -42,7 +42,6 @@ jobs:
       - name: install dependencies
         run: |
           python -mpip install --progress-bar=off .
-          virtualenv --version
           pip --version
           tox --version
           pip list --format=freeze
