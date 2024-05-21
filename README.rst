@@ -2,7 +2,26 @@
 CortexQuest
 ===========
 
+========
+Overview
+========
+.. list-table::
+    :stub-columns: 1
 
+    * - docs
+      - |docs|
+    * - tests, CI & coverage
+      - |github-actions| |codecov| |codacy|
+    * - version
+      - |pypi| |python|
+    * - styling
+      - |black| |isort| |flake8| |pre-commit|
+    * - license
+      - |license|
+
+.. |docs| image:: https://readthedocs.org/projects/neuroflow/badge/?style=flat
+    :target: https://readthedocs.org/projects/neuroflow/
+    :alt: Documentation Status
 .. image:: https://img.shields.io/pypi/v/cortexquest.svg
         :target: https://pypi.python.org/pypi/cortexquest
 

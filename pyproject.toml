@@ -8,10 +8,12 @@ version = "0.1.0"
 description = "CortexQuest is a Python package designed to facilitate the reading, parsing, and analysis of questionnaires hosted on Google Sheets, specifically tailored for brain bank data. This tool aims to streamline the process of handling survey data related to neuroscience research, providing researchers with an efficient and user-friendly way to manage and analyze their data."
 readme = "README.rst"
 authors = [
-  {name = "Gal Kepler", email = "galkepler@gmail.com"}
+  {name = "Gal Kepler", email = "galkepler@gmail.com"},
+  {name = "Tzlil Tabib", email = "tzliltabib@gmail.com"}
 ]
 maintainers = [
-  {name = "Gal Kepler", email = "galkepler@gmail.com"}
+  {name = "Gal Kepler", email = "galkepler@gmail.com"},
+  {name = "Tzlil Tabib", email = "tzliltabib@gmail.com"}
 ]
 classifiers = [
 
