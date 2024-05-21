@@ -19,8 +19,8 @@ Overview
     * - license
       - |license|
 
-.. |docs| image:: https://readthedocs.org/projects/neuroflow/badge/?style=flat
-    :target: https://readthedocs.org/projects/neuroflow/
+.. |docs| image:: https://readthedocs.org/projects/cortexquest/badge/?version=latest
+    :target: https://readthedocs.org/projects/cortexquest/
     :alt: Documentation Status
 .. image:: https://img.shields.io/pypi/v/cortexquest.svg
         :target: https://pypi.python.org/pypi/cortexquest
