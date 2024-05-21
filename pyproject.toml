@@ -20,7 +20,13 @@ classifiers = [
 ]
 license = {text = "MIT license"}
 dependencies = [
-  "typer"
+  "typer",
+  "tox",
+  "pandas",
+  "gspread",
+  "oauth2client",
+  "google-auth",
+  "google-auth-oauthlib"
 ]
 
 [project.optional-dependencies]
