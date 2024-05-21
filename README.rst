@@ -31,8 +31,8 @@ Overview
     :alt: Coverage Status
     :target: https://app.codecov.io/github/GalKepler/cortexquest
 
-.. |codacy| image:: https://app.codacy.com/project/badge/Grade/6acd65a8fd4741509422510d7a023386
-    :target: https://app.codacy.com/gh/GalKepler/cortexquest/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
+.. |codacy| image:: https://app.codacy.com/project/badge/Grade/7fe5b4cb103d4100bf00603c913b9ac1
+    :target: https://app.codacy.com/gh/GalKepler/CortexQuest/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
     :alt: Code Quality
 
 CortexQuest is a Python package designed to facilitate the reading, parsing, and analysis of questionnaires hosted on Google Sheets, specifically tailored for brain bank data. This tool aims to streamline the process of handling survey data related to neuroscience research, providing researchers with an efficient and user-friendly way to manage and analyze their data.
