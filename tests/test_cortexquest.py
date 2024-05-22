@@ -5,9 +5,6 @@
 import pytest
 
 
-from cortexquest import cortexquest
-
-
 @pytest.fixture
 def response():
     """Sample pytest fixture.
