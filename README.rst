@@ -35,6 +35,12 @@ Overview
     :target: https://app.codacy.com/gh/GalKepler/CortexQuest/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
     :alt: Code Quality
 
+.. |pypi| image:: https://img.shields.io/pypi/v/cortexquest.svg
+        :target: https://pypi.python.org/pypi/cortexquest
+
+.. |python| image:: https://img.shields.io/pypi/pyversions/cortexquest
+        :target: https://www.python.org
+
 .. |license| image:: https://img.shields.io/github/license/GalKepler/CortexQuest.svg
         :target: https://opensource.org/license/mit
         :alt: License
