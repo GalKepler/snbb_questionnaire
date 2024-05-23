@@ -109,4 +109,4 @@ ENV/
 .idea/
 
 # trials
-trials.ipynb
+.trials
