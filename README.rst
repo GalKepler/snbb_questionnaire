@@ -20,8 +20,8 @@ Overview
       - |license|
 
 
-.. |docs| image:: https://readthedocs.org/projects/snbb_questionnaire/badge/?version=latest
-    :target: https://readthedocs.org/projects/snbb_questionnaire/
+.. |docs| image:: https://readthedocs.org/projects/snbbquestionnaire/badge/?version=latest
+    :target: https://snbbquestionnaire.readthedocs.io/en/latest/
     :alt: Documentation Status
 
 .. |github-actions| image:: https://github.com/GalKepler/snbb_questionnaire/actions/workflows/github-actions.yml/badge.svg
