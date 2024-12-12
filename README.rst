@@ -28,7 +28,7 @@ Overview
     :alt: GitHub Actions Build Status
     :target: https://github.com/GalKepler/snbb_questionnaire/actions
 
-.. |codecov| image:: https://codecov.io/github/GalKepler/snbb_questionnaire/graph/badge.svg?token=LO5CH471O4
+.. |codecov| image:: https://codecov.io/gh/GalKepler/snbb_questionnaire/graph/badge.svg?token=D3YXDX6MPB
     :alt: Coverage Status
     :target: https://app.codecov.io/github/GalKepler/snbb_questionnaire
 
