@@ -1,4 +1,4 @@
-* SNBB Questionnaire version:
+* CortexQuest version:
 * Python version:
 * Operating System:
 
