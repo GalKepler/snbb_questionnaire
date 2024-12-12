@@ -2,21 +2,65 @@
 SNBB Questionnaire
 ==================
 
+========
+Overview
+========
+.. list-table::
+    :stub-columns: 1
 
-.. image:: https://img.shields.io/pypi/v/snbb_questionnaire.svg
+    * - docs
+      - |docs|
+    * - tests, CI & coverage
+      - |github-actions| |codecov| |codacy|
+    * - version
+      - |pypi| |python|
+    * - styling
+      - |black| |isort| |flake8| |pre-commit|
+    * - license
+      - |license|
+
+
+.. |docs| image:: https://readthedocs.org/projects/snbb_questionnaire/badge/?version=latest
+    :target: https://readthedocs.org/projects/cortexquest/
+    :alt: Documentation Status
+
+.. |github-actions| image:: https://github.com/GalKepler/snbb_questionnaire/actions/workflows/github-actions.yml/badge.svg
+    :alt: GitHub Actions Build Status
+    :target: https://github.com/GalKepler/snbb_questionnaire/actions
+
+.. |codecov| image:: https://codecov.io/github/GalKepler/snbb_questionnaire/graph/badge.svg?token=LO5CH471O4
+    :alt: Coverage Status
+    :target: https://app.codecov.io/github/GalKepler/snbb_questionnaire
+
+.. |codacy| image:: https://app.codacy.com/project/badge/Grade/7fe5b4cb103d4100bf00603c913b9ac1
+    :target: https://app.codacy.com/gh/GalKepler/snbb_questionnaire/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
+    :alt: Code Quality
+
+.. |pypi| image:: https://img.shields.io/pypi/v/snbb_questionnaire.svg
         :target: https://pypi.python.org/pypi/snbb_questionnaire
 
-.. image:: https://img.shields.io/travis/GalKepler/snbb_questionnaire.svg
-        :target: https://travis-ci.com/GalKepler/snbb_questionnaire
+.. |python| image:: https://img.shields.io/pypi/pyversions/snbb_questionnaire
+        :target: https://www.python.org
 
-.. image:: https://readthedocs.org/projects/snbb-questionnaire/badge/?version=latest
-        :target: https://snbb-questionnaire.readthedocs.io/en/latest/?version=latest
-        :alt: Documentation Status
+.. |license| image:: https://img.shields.io/github/license/GalKepler/snbb_questionnaire.svg
+        :target: https://opensource.org/license/mit
+        :alt: License
 
+.. |black| image:: https://img.shields.io/badge/formatter-black-000000.svg
+      :target: https://github.com/psf/black
 
+.. |isort| image:: https://img.shields.io/badge/imports-isort-%231674b1.svg
+        :target: https://pycqa.github.io/isort/
 
+.. |flake8| image:: https://img.shields.io/badge/style-flake8-000000.svg
+        :target: https://flake8.pycqa.org/en/latest/
 
-Python package to sort and analyze the SNBB questionnonnaire
+.. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+        :target: https://github.com/pre-commit/pre-commit
+
+SnbbQuestionnonnaire is a Python package designed to facilitate the reading, parsing, and analysis of questionnaires hosted on Google Sheets,
+specifically tailored for brain bank data. This tool aims to streamline the process of handling survey data related to neuroscience research,
+providing researchers with an efficient and user-friendly way to manage and analyze their data.
 
 
 * Free software: MIT license
