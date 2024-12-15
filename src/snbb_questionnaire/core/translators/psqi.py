@@ -26,7 +26,7 @@ def date_to_time(timestamp: str) -> str:
         return np.nan
 
 
-def str_to_int(value: str) -> int:
+def str_to_float(value: str) -> int:
     """
     Convert a string to an integer.
 
@@ -41,7 +41,7 @@ def str_to_int(value: str) -> int:
         The integer value of the string
     """
     try:
-        return int(value)
+        return float(value)
     except ValueError:
         return np.nan
 
@@ -90,9 +90,9 @@ VALUES_DICT_4 = {
 
 REPLACE_DICT = {
     "HW-PQSI001": {"func": date_to_time, "args": {}},
-    "HW-PQSI002": {"func": str_to_int, "args": {}},
+    "HW-PQSI002": {"func": str_to_float, "args": {}},
     "HW-PQSI003": {"func": date_to_time, "args": {}},
-    "HW-PQSI004": {"func": str_to_int, "args": {}},
+    "HW-PQSI004": {"func": str_to_float, "args": {}},
     "HW-PQSI005": {"func": replace_values, "args": {"replace_dict": VALUES_DICT_1}},
     "HW-PQSI006": {"func": replace_values, "args": {"replace_dict": VALUES_DICT_1}},
     "HW-PQSI007": {"func": replace_values, "args": {"replace_dict": VALUES_DICT_1}},

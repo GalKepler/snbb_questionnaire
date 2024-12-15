@@ -11,6 +11,9 @@ class SheetLoader:
     A class to load data from a Google Sheet.
     """
 
+    DATA_SHEET_NUMBER = 2
+    METADATA_SHEET_NUMBER = 0
+
     def __init__(self, sheet_key: str):
         """
         Initialize the SheetLoader object.
@@ -57,9 +60,12 @@ class SheetLoader:
         pd.DataFrame
             A pandas DataFrame containing the metadata from the Google Sheet.
         """
-        worksheet = self.sheet.get_worksheet(2)  # Assumes the first worksheet
+        worksheet = self.sheet.get_worksheet(
+            self.DATA_SHEET_NUMBER
+        )  # Assumes the first worksheet
         data = worksheet.get_all_values()
         sheet_data = pd.DataFrame(data[1:], columns=data[0])
+        self._sheet_data = sheet_data
 
         return sheet_data.rename({"": "questionnaire_id"}, axis=1)
 
@@ -72,7 +78,7 @@ class SheetLoader:
         pd.DataFrame
             A pandas DataFrame containing the data from the Google Sheet.
         """
-        worksheet = self.sheet.get_worksheet(0)  # Assumes the first worksheet
+        worksheet = self.sheet.get_worksheet(self.METADATA_SHEET_NUMBER)
         data = worksheet.get_all_values()
         sheet_data = pd.DataFrame(data[1:], columns=data[0])
         sheet_data["question_english"] = sheet_data["Question"].apply(
