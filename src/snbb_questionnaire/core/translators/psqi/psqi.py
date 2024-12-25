@@ -1,6 +1,5 @@
 from enum import Enum
 import warnings
-from snbb_questionnaire.core.sheet_loader import SheetLoader
 import pandas as pd
 from datetime import datetime
 import numpy as np
@@ -147,7 +146,7 @@ class PsqiQuestions(Enum):
     PQSI026 = "10e"
 
 
-class PSQI:
+class PSQITranslator:
     MANDATORY_QUESTIONS = [
         "1",
         "2",
@@ -206,13 +205,13 @@ class PSQI:
         q4 = row["4"]
         if pd.isna(q4):
             return np.nan
-        elif q4 > 7:
+        elif q4 >= 7:
             result = 0
-        elif q4 > 6:
+        elif 6 <= q4 < 7:
             result = 1
-        elif q4 > 5:
+        elif 5 <= q4 < 6:
             result = 2
-        else:
+        elif q4 < 5:
             result = 3
         return result
 
@@ -247,7 +246,9 @@ class PSQI:
         # IF Q5b + Q5c + Q5d + Q5e + Q5f + Q5g + Q5h + Q5i + Q5j > 9 and <= 18, THEN set value to 2
         # IF Q5b + Q5c + Q5d + Q5e + Q5f + Q5g + Q5h + Q5i + Q5j > 18, THEN set value to 3
         result = q5b + q5c + q5d + q5e + q5f + q5g + q5h + q5i + q5j
-        if 1 <= result <= 9:
+        if result == 0:
+            result = 0
+        elif 1 <= result <= 9:
             result = 1
         elif 9 < result <= 18:
             result = 2
@@ -273,13 +274,13 @@ class PSQI:
         q2 = row["2"]
         if pd.isna(q2):
             return np.nan
-        elif 0 < q2 < 15:
+        elif 0 <= q2 <= 15:
             q2new = 0
-        elif 15 < q2 < 30:
+        elif 15 < q2 <= 30:
             q2new = 1
-        elif 30 < q2 < 60:
+        elif 30 < q2 <= 60:
             q2new = 2
-        else:
+        elif q2 > 60:
             q2new = 3
         # Next
         # IF Q5a + Q2new = 0, THEN set value to 0
@@ -292,11 +293,11 @@ class PSQI:
         result = q5a + q2new
         if result == 0:
             result = 0
-        elif 1 < result < 2:
+        elif 1 <= result <= 2:
             result = 1
-        elif 3 < result < 4:
+        elif 3 <= result <= 4:
             result = 2
-        elif 5 < result < 6:
+        elif 5 <= result <= 6:
             result = 3
         return result
 
@@ -320,11 +321,11 @@ class PSQI:
         result = q8 + q9
         if result == 0:
             result = 0
-        elif 1 < result < 2:
+        elif 1 <= result <= 2:
             result = 1
-        elif 3 < result < 4:
+        elif 3 <= result <= 4:
             result = 2
-        elif 5 < result < 6:
+        elif 5 <= result <= 6:
             result = 3
         return result
 
@@ -365,13 +366,13 @@ class PSQI:
         # IF tmphse < 85 and > 75, THEN set value to 1
         # IF tmphse < 75 and > 65, THEN set value to 2
         # IF tmphse < 65, THEN set value to 3
-        if tmphse > 85:
+        if tmphse >= 85:
             result = 0
-        elif 75 < tmphse < 85:
+        elif 75 <= tmphse < 85:
             result = 1
-        elif 65 < tmphse < 75:
+        elif 65 <= tmphse < 75:
             result = 2
-        else:
+        elif tmphse < 65:
             result = 3
         return result
 

@@ -11,7 +11,7 @@ class SheetLoader:
     A class to load data from a Google Sheet.
     """
 
-    DATA_SHEET_NUMBER = 2
+    DATA_SHEET_NUMBER = 1
     METADATA_SHEET_NUMBER = 0
 
     def __init__(self, sheet_key: str):
